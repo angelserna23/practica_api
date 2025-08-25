@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.header .header__presentation {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  width: auto;
+}
+.header .header__presentation .header__presentation-img {
+  opacity: 0.5;
+  width: 30%;
+}
+.header .header__presentation .header__title {
+  font-size: 2.6rem;
+  margin: 0;
+}
+.header .header__menu {
+  display: flex;
+  box-sizing: border-box;
+  align-items: baseline;
+  gap: 10px;
+}
+.header .header__menu .header__search {
+  display: flex;
+  align-items: center;
+}
+.header .header__menu .header__search .header__search-input {
+  margin: 0 0.5rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+}
+.header .header__menu .header__search .header__search-submit {
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #000000;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.header .header__menu .header__search .header__search-submit:hover {
+  background-color: #0044ff;
+  transition: all 0.1s ease-in;
+}
+.header .header__menu .header__search .header__img-menu {
+  cursor: pointer;
+  margin: 2rem 2rem;
+  padding: 1rem 1rem;
+}
+.header .header__menu .header__search .header__img-menu:hover {
+  transition: all 0.3s ease-out;
+  background-color: rgb(78, 78, 78);
+  border-radius: 50%;
+}
+.header .header__menu .header__nav-menu {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 9px;
+  background-color: #4d4d4d;
+  padding: 1rem 3rem;
+  padding-bottom: 4rem;
+  border-bottom-left-radius: 25px;
+  position: fixed;
+  right: -100%;
+  transition: all 0.3s ease-in-out;
+}
+.header .header__menu .header__nav-menu .header__nav-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1.4rem;
+}
+.header .header__menu .header__nav-menu .header__nav-menu-hyperlink {
+  color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.header .header__menu .header__nav-menu .header__nav-menu-hyperlink:hover {
+  color: #1c8302;
+  font-size: 1.05rem;
+  transition: all 0.2s ease-out;
+}
+.header .header__menu .header__nav-menu.show {
+  right: 0;
+}
+
+.main .shows {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 2rem 2em;
+}
+.main .shows .show__card {
+  display: flex;
+  flex-direction: column;
+}
+.main .shows .show__card .show__card-img {
+  width: 100%;
+  cursor: pointer;
+}
+.main .shows .show__card .show__card-img:hover {
+  opacity: 0.8;
+  transition: all 0.1s ease-in;
+}
+.main .shows .show__card .show__info {
+  background-color: rgba(95, 95, 95, 0.6901960784);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main .shows .show__card .show__info .show__card-title {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid white;
+}
+.main .shows .show__card .show__info .show__select {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .shows .show__card .show__info .show__select .show__select-icon-1 {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  padding: 2px 2px;
+}
+.main .shows .show__card .show__info .show__select .show__select-icon-1:hover {
+  border-radius: 50%;
+  width: 12%;
+  transition: all 0.3s ease-in-out;
+}
+.main .shows .show__card .show__info .show__select .show__select-icon-2 {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  padding: 2px 2px;
+}
+.main .shows .show__card .show__info .show__select .show__select-icon-2:hover {
+  border-radius: 50%;
+  width: 12%;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=main.css.map */
