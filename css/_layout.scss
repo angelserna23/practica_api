@@ -139,7 +139,7 @@ body {
                 cursor: pointer;
 
                 &:hover {
-                    opacity: .8;
+                    opacity: .6;
                     transition: all .1s ease-in;
                 }
             }
@@ -152,6 +152,7 @@ body {
                 .show__card-title {
                     margin: 0;
                     text-align: center;
+                    font-size: .9rem;
                     margin-bottom: .6rem;
                     border-bottom: 1px solid white;
                 }
